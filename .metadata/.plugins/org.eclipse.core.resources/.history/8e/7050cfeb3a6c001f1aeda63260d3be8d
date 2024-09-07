@@ -1,0 +1,37 @@
+package vn.iotstar.controllers;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DBConnection {
+	private final String serverName = "LAPTOP-D9J937E4"; // tên máy chủ
+	private final String dbName = "QUANLYNV"; // tên database
+	private final String portNumber = "1433";
+	private final String instance = ""; // để trống nếu không có instance cụ thể
+
+	public Connection getConnectionW() throws Exception {
+		// Chuỗi kết nối với Integrated Security (xác thực Windows)
+		String url = "jdbc:sqlserver://" + serverName + "\\" + instance + ":" + portNumber
+				+ ";integratedSecurity=true;databaseName=" + dbName;
+		if (instance == null || instance.trim().isEmpty()) {
+			// Nếu không có instance, dùng URL không có instance
+			url = "jdbc:sqlserver://" + serverName + ":" + portNumber + ";integratedSecurity=true;databaseName=" + dbName;
+		}
+
+		// Nạp driver JDBC
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+
+		// Kết nối với SQL Server
+		return DriverManager.getConnection(url);
+	}
+
+	public static void main(String[] args) {
+		try {
+			// Kiểm tra kết nối
+			Connection connection = new DBConnection().getConnectionW();
+			System.out.println("Kết nối thành công: " + connection);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

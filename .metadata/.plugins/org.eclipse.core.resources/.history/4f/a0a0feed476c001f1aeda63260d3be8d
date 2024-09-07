@@ -1,0 +1,9 @@
+spring.datasource.url=jdbc:sqlserver://LAPTOP-D9J937E4:1433;databaseName=QUANLYNV
+spring.datasource.username=sa
+spring.datasource.password=0123456789
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=create-drop
+
+spring.mvc.view.prefix: /WEB-INF/jsp/
+spring.mvc.view.suffix: .jps
