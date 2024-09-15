@@ -1,6 +1,7 @@
 package vn.iotstar.models;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 public class UserModel implements Serializable{
 	
@@ -11,12 +12,28 @@ public class UserModel implements Serializable{
 	private String password;
 	private String fullname;
 	private String images;
+	private String phone;
+	private int roleid;
+	private Date creatDate;
 	
 	public UserModel() {
 		super();
 	}
 
-	public UserModel(int id, String username, String email, String password, String fullname, String images) {
+	public UserModel(String username, String email, String password, String fullname, String phone,
+			int roleid, Date creatDate) {
+		super();
+		this.username = username;
+		this.email = email;
+		this.password = password;
+		this.fullname = fullname;
+		this.phone = phone;
+		this.roleid = roleid;
+		this.creatDate = creatDate;
+	}
+
+	public UserModel(int id, String username, String email, String password, String fullname, String images,
+			String phone, int roleid, Date creatDate) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -24,6 +41,9 @@ public class UserModel implements Serializable{
 		this.password = password;
 		this.fullname = fullname;
 		this.images = images;
+		this.phone = phone;
+		this.roleid = roleid;
+		this.creatDate = creatDate;
 	}
 
 	public int getId() {
@@ -74,11 +94,34 @@ public class UserModel implements Serializable{
 		this.images = images;
 	}
 
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public int getRoleid() {
+		return roleid;
+	}
+
+	public void setRoleid(int roleid) {
+		this.roleid = roleid;
+	}
+
+	public Date getCreatDate() {
+		return creatDate;
+	}
+
+	public void setCreatDate(Date creatDate) {
+		this.creatDate = creatDate;
+	}
+
 	@Override
 	public String toString() {
 		return "UserModel [id=" + id + ", username=" + username + ", email=" + email + ", password=" + password
-				+ ", fullname=" + fullname + ", images=" + images + "]";
+				+ ", fullname=" + fullname + ", images=" + images + ", phone=" + phone + ", roleid=" + roleid
+				+ ", creatDate=" + creatDate + "]";
 	}
-	
-	
 }

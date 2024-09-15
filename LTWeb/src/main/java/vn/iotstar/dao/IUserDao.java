@@ -13,10 +13,14 @@ public interface IUserDao {
 	UserModel findById(int id);
 	
 	//Tìm user theo username
-	UserModel findOne(String username);
+	UserModel findByUsername(String username);
 	
 	//Thêm user
 	void insert(UserModel user);
+	
+	void updatePassword(String password, String username);
+	
+	void insertRegister(UserModel user);
 	
 	//Thêm user --> đăng kí tài khoản
 	boolean register(UserModel user);
@@ -32,6 +36,8 @@ public interface IUserDao {
 	
 	//Kiểm tra username đã tồn tại chưa
 	boolean checkExistId(int id);
+	
+	boolean checkExistPhone(String phone);
 	
 	//login
 	UserModel login(String username, String password);

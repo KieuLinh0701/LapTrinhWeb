@@ -42,12 +42,13 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\linhk\Downloads\JakartaServlet-main"/>
 			<item value="C:\Users\linhk\Downloads\HelloServlet"/>
 			<item value="C:\Users\linhk\Downloads\ltwebst4"/>
 			<item value="C:\Users\linhk\eclipse-workspace\HelloWorld"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="47"/>
+			<item key="DIALOG_X_ORIGIN" value="33"/>
 			<item key="DIALOG_Y_ORIGIN" value="30"/>
 			<item key="DIALOG_WIDTH" value="935"/>
 			<item key="DIALOG_HEIGHT" value="726"/>
