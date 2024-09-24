@@ -19,5 +19,5 @@ public interface IUserService {
 	
 	UserModel updatePassword(String username, String password);
 	
-	UserModel updateAccount(String phone, String fullname, String username);
+	UserModel updateAccount(String phone, String fullname, String username, String images);
 }

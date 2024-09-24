@@ -31,9 +31,18 @@
     <fullyQualifiedTypeName name="vn.iotstar.models.UserModel"/>
     <fullyQualifiedTypeName name="vn.iotstar.services.IUserService"/>
     <fullyQualifiedTypeName name="vn.iotstar.services.implement.UserService"/>
-    <fullyQualifiedTypeName name="vn.iotstar.utils.Constant"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.Cookie"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.MultipartConfig"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.Part"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.disk.DiskFileItemFactory"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload2.jakarta.servlet6.JakartaServletFileUpload"/>
+    <fullyQualifiedTypeName name="vn.iotstar.utils.Constant"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.nio.file.StandardCopyOption"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
 </qualifiedTypeNameHistroy>

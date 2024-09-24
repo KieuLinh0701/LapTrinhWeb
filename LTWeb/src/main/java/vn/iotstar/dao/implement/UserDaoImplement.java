@@ -303,16 +303,17 @@ public class UserDaoImplement extends DBConnection implements IUserDao {
 	}
 
 	@Override
-	public void updateAccount(String phone, String fullname, String username) {
+	public void updateAccount(String phone, String fullname, String username, String images) {
 		String sql = "UPDATE users\n"
-				+ "SET phone = ?, fullname = ?\n"
+				+ "SET phone = ?, fullname = ?, images = ?\n"
 				+ "WHERE username = ?;";
 		try {
 			conn = super.getConnection();
 			ps = conn.prepareStatement(sql);
 			ps.setString(1, phone);
 			ps.setString(2, fullname);
-			ps.setString(3, username);
+			ps.setString(3, images);
+			ps.setString(4, username);
 			ps.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();

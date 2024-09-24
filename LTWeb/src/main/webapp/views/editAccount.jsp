@@ -8,7 +8,7 @@
 				<c:if test="${alert !=null}">
 					<h3 class="alert alertdanger">${alert}</h3>
 				</c:if>
-				<form action="${pageContext.request.contextPath}/editaccount" method="post" class="form-horizontal form-without-legend" role="form">
+				<form action="${pageContext.request.contextPath}/editaccount" method="post" enctype="multipart/form-data" class="form-horizontal form-without-legend" role="form">
 					<input type="hidden" name="username" value="${sessionScope.account.username}">
 					<div class="form-group">
 						<label for="fullname" class="col-lg-4 control-label">Full Name <span

@@ -5,5 +5,8 @@ public class Constant {
 	public static final String COOKIE_REMEMBER = "username";
 
 	public static final String REGISTER = "/views/register.jsp";
+	
+	public static final String UPLOAD_DIRECTORY = "C:\\upload";
+	public static final String DEFAULT_FILENAME = "default.file";
 
 }
