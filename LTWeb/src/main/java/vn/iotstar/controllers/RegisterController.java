@@ -30,6 +30,7 @@ public class RegisterController extends HttpServlet {
 		String password = req.getParameter("password");
 		String fullname = req.getParameter("fullname");
 		String phone = req.getParameter("phone");
+		String confirmPassword = req.getParameter("confirmPassword");
 		IUserService service = new UserService();
 		String alertMsg = "";
 		if (service.checkExistEmail(email)) {
@@ -40,6 +41,12 @@ public class RegisterController extends HttpServlet {
 		}
 		if (service.checkExistUsername(username)) {
 			alertMsg = "Tài khoản đã tồn tại!";
+			req.setAttribute("alert", alertMsg);
+			req.getRequestDispatcher(Constant.REGISTER).forward(req, resp);
+			return;
+		}
+		if (!password.equals(confirmPassword)) {
+			alertMsg = "Mật khẩu xác nhận không đúng!";
 			req.setAttribute("alert", alertMsg);
 			req.getRequestDispatcher(Constant.REGISTER).forward(req, resp);
 			return;

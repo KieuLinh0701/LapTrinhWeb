@@ -31,9 +31,9 @@
     <fullyQualifiedTypeName name="vn.iotstar.models.UserModel"/>
     <fullyQualifiedTypeName name="vn.iotstar.services.IUserService"/>
     <fullyQualifiedTypeName name="vn.iotstar.services.implement.UserService"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="vn.iotstar.utils.Constant"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.Cookie"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
 </qualifiedTypeNameHistroy>

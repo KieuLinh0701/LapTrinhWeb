@@ -42,6 +42,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\linhk\Downloads\ltwebct4"/>
+			<item value="C:\Users\linhk\Downloads\baitap"/>
+			<item value="C:\Users\linhk\Documents\workspace.RELEASE\LTWeb"/>
 			<item value="C:\Users\linhk\Downloads\JakartaServlet-main"/>
 			<item value="C:\Users\linhk\Downloads\HelloServlet"/>
 			<item value="C:\Users\linhk\Downloads\ltwebst4"/>

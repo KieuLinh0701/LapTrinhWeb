@@ -35,8 +35,8 @@ public class LoginController extends HttpServlet {
 		req.setCharacterEncoding("UTF-8");
 
 		// Lấy tham số từ view
-		String username = req.getParameter("uname");
-		String password = req.getParameter("psw");
+		String username = req.getParameter("username");
+		String password = req.getParameter("password");
 		String remember = req.getParameter("remember");
 
 		// kiểm tra tham số
