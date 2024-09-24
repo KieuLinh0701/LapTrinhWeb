@@ -301,4 +301,21 @@ public class UserDaoImplement extends DBConnection implements IUserDao {
 			e.printStackTrace();
 		}
 	}
+
+	@Override
+	public void updateAccount(String phone, String fullname, String username) {
+		String sql = "UPDATE users\n"
+				+ "SET phone = ?, fullname = ?\n"
+				+ "WHERE username = ?;";
+		try {
+			conn = super.getConnection();
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, phone);
+			ps.setString(2, fullname);
+			ps.setString(3, username);
+			ps.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

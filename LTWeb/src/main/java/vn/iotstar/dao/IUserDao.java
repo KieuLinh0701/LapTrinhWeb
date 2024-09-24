@@ -41,4 +41,6 @@ public interface IUserDao {
 	
 	//login
 	UserModel login(String username, String password);
+	
+	void updateAccount(String phone, String fullname, String username);
 }

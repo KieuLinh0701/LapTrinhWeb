@@ -68,4 +68,14 @@ public class UserService implements IUserService {
 		return null;
 	}
 
+	@Override
+	public UserModel updateAccount(String phone, String fullname, String username) {
+		UserModel user = this.findByUsername(username);
+		if (user != null) {
+			userDao.updateAccount(phone, fullname, username);
+			return user;
+		}
+		return null;
+	}
+
 }

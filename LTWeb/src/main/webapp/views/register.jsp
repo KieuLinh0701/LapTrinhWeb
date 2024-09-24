@@ -81,7 +81,6 @@
 							class="col-lg-8 col-md-offset-4 padding-left-0 padding-top-20">
 							<button type="submit" class="registerbtn">Create an
 								account</button>
-							<button type="button" class="cancelbtn">Cancel</button>
 						</div>
 					</div>
 				</form>

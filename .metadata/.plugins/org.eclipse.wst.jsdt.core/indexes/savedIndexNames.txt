@@ -1,8 +1,3 @@
 INDEX VERSION 1.4+C:\Users\linhk\Documents\workspace.RELEASE\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-710793098.index
-3150368724.index
-3970011273.index
-3258246612.index
-3398592291.index
-2923958500.index
 3240616753.index
+3398592291.index
