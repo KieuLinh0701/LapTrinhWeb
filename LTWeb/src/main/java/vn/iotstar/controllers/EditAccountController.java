@@ -49,7 +49,7 @@ public class EditAccountController extends HttpServlet {
 		String fileName = getFileName(filePart);
 
 		// Tạo đường dẫn đầy đủ đến file đích
-		String filePath = uploadDirectory + File.separator + fileName;
+		String filePath = fileName;
 
 		// Lưu file vào thư mục
 		try (InputStream input = filePart.getInputStream()) {
