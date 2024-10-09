@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.sql.DatabaseMetaData"/>
-    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
-    <fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="vn.iotstar.dao.implement.UserDaoImplement"/>
@@ -24,14 +21,11 @@
     <fullyQualifiedTypeName name="java.nio.file.Files"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="vn.iotstar.dao.ICategoryDao"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="vn.iotstar.dao.implement.CategoryDaoImplement"/>
     <fullyQualifiedTypeName name="vn.iotstar.configs.DBConnection"/>
     <fullyQualifiedTypeName name="javax.net.ssl.HttpsURLConnection"/>
-    <fullyQualifiedTypeName name="vn.iotstar.services.ICategoryService"/>
     <fullyQualifiedTypeName name="vn.iotstar.services.implement.CategoryService"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
@@ -42,7 +36,6 @@
     <fullyQualifiedTypeName name="org.apache.commons.io.IOUtils"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="vn.iotstar.models.CategoryModel"/>
-    <fullyQualifiedTypeName name="vn.iotstar.utils.Constant"/>
     <fullyQualifiedTypeName name="java.nio.file.Path"/>
     <fullyQualifiedTypeName name="java.nio.file.Paths"/>
     <fullyQualifiedTypeName name="jakarta.servlet.annotation.MultipartConfig"/>
@@ -59,5 +52,12 @@
     <fullyQualifiedTypeName name="jakarta.persistence.EntityManagerFactory"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Persistence"/>
     <fullyQualifiedTypeName name="java.util.Locale.Category"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.TypedQuery"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Query"/>
+    <fullyQualifiedTypeName name="vn.iotstar.services.ICategoryService"/>
+    <fullyQualifiedTypeName name="vn.iotstar.dao.ICategoryDao"/>
+    <fullyQualifiedTypeName name="vn.iotstar.dao.implement.CategoryDao"/>
+    <fullyQualifiedTypeName name="vn.iotstar.utils.Constant"/>
     <fullyQualifiedTypeName name="vn.iotstar.entity.Category"/>
 </qualifiedTypeNameHistroy>

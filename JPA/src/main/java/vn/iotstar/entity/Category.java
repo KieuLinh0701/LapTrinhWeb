@@ -43,11 +43,11 @@ public class Category implements Serializable {
 		this.categoryId = categoryId;
 	}
 
-	public String getCategoryname() {
+	public String getCategoryName() {
 		return categoryName;
 	}
 
-	public void setCategoryname(String categoryName) {
+	public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
 	}
 
