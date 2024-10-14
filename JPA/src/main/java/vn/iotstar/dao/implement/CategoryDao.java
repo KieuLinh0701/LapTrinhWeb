@@ -88,7 +88,7 @@ public class CategoryDao implements ICategoryDao{
 		EntityManager enma = JPAConfig.getEntityManager();
 		String jpql = "SELECT c FROM Category c WHERE c.categoryName like : cateName";
 		TypedQuery<Category> query = enma.createQuery(jpql, Category.class);
-		query.setParameter("categoryName", "%" + cateName + "%");
+		query.setParameter("cateName", "%" + cateName + "%");
 		return query.getResultList();
 	}
 	

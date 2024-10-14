@@ -2,9 +2,10 @@ package vn.iotstar.controllers.admin;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+
+import com.microsoft.sqlserver.jdbc.StringUtils;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
@@ -14,6 +15,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.Part;
 import vn.iotstar.entity.Category;
+import vn.iotstar.entity.Video;
 import vn.iotstar.services.ICategoryService;
 import vn.iotstar.services.implement.CategoryService;
 import static vn.iotstar.utils.Constant.*;
@@ -36,7 +38,13 @@ public class CategoryController extends HttpServlet {
 			List<Category> list = cateService.findAll();
 			req.setAttribute("listcate", list);
 			req.getRequestDispatcher("/views/admin/category-list.jsp").forward(req, resp);
-		} else if (url.contains("add")) {
+		} else if (url.contains("search")){ 
+			String keyword = req.getParameter("keyword");
+			List<Category> list = cateService.findByCategoryName(keyword);
+			req.setAttribute("keyword", keyword);
+			req.setAttribute("listcate", list);
+			req.getRequestDispatcher("/views/admin/category-list.jsp").forward(req, resp);
+		}else if (url.contains("add")) {
 			req.getRequestDispatcher("/views/admin/category-add.jsp").forward(req, resp);
 		} else if (url.contains("edit")) {
 			int id = Integer.parseInt(req.getParameter("id"));

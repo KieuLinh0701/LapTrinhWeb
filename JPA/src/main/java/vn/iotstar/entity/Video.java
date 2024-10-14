@@ -12,8 +12,9 @@ public class Video implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "videoId")
-	private String videoId;
+	private int videoId;
 
 	@Column(name = "active")
 	private int active;
@@ -39,11 +40,11 @@ public class Video implements Serializable {
 	public Video() {
 	}
 
-	public String getVideoId() {
+	public int getVideoId() {
 		return videoId;
 	}
 
-	public void setVideoId(String videoId) {
+	public void setVideoId(int videoId) {
 		this.videoId = videoId;
 	}
 
